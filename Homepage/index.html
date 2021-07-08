@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        
+        <!-- ===== CSS ===== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>Virath Shuklla</title>
+    </head>
+    <body id="body-pd">
+    <div class="container">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <img src="assets/img/prefill.jpg" alt="">
+            </div>
+        </header>
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <i class='bx bx-layer nav__logo-icon'></i>
+                        <span class="nav__logo-name">Virath</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+
+                        <a href="../aboutus/about.html" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">About us</span>
+                        </a>
+                        
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon' ></i>
+                            <span class="nav__name">Contact us</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bookmark nav__icon' ></i>
+                            <span class="nav__name">Favourite</span>
+                        </a>
+
+                        <a href="../Projects/project.html" class="nav__link">
+                            <i class='bx bx-folder nav__icon' ></i>
+                            <span class="nav__name">Projects</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Skills</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="wrapper">
+            <div class="typing-demo">
+              Hi my name is Virath Shuklla
+            </div>
+        </div>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <div class="qrcode">
+            <ul>
+                <li align='center' class="scan">Search for the link below</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                <li align='center' class="qr"><a href="https://veeirshuklla.com">Click the link</a></li>
+                <div class="cursor"></div>
+
+                <svg viewBox="0 0 175 167" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: translate3d(0px, 0px, 0px); visibility: hidden; opacity: 0;">
+                    <g fill="white" stroke="#1997FC" stroke-width="2">
+                        <path d="M1.5 14.5V1H15"></path>
+                        <path d="M160 0.999999L173.5 1L173.5 14.5"></path>
+                        <path d="M15 165.5L1.5 165.5L1.5 152"></path>
+                        <path d="M173.5 152L173.5 165.5L160 165.5"></path>
+                    </g>
+                </svg>
+            </ul>
+
+            <script>
+                const cursor = document.querySelector('.cursor');
+                document.addEventListener('mousemove', (e) =>{
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px'
+                })
+            </script>
+        </div>
+    </div>
+    </body>
+</html>
